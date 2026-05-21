@@ -1,0 +1,18 @@
+Git commands:
+git clone https://github.com/izzakatherinedelatorredizon-ui/Activity3-APPDEV-DIZON.git
+cd Activity3-APPDEV-DIZON.git
+echo This is my first Git activity. > git-activity.txt
+git add git-activity.txt
+git config --global user.email "izza.katherine.delatorre.dizon@gmail.com"
+git config --global user.name "izzakatherinedelatorredizon-ui"
+git commit -m "Initial commit"
+git push origin main
+git branch feature-branch
+git checkout feature-branch
+echo Adding more information. >> git-activity.txt
+git add git-activity.txt
+git commit -m "Updated git-activity.txt in feature-branch"
+git checkout main
+git merge feature-branch
+git push origin main
+git pull origin main
